@@ -15,11 +15,13 @@
             <div class="form-group">
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                <span class="error-message" id="fullNameError"></span>
             </div>
 
             <div class="form-group">
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <span class="error-message" id="emailError"></span>
             </div>
 
             <div class="form-group">
@@ -27,6 +29,7 @@
                 <label><input type="radio" name="gender" value="male" required> Male</label>
                 <label><input type="radio" name="gender" value="female"> Female</label>
                 <label><input type="radio" name="gender" value="other"> Other</label>
+                <span class="error-message" id="genderError"></span>
             </div>
 
             <div class="form-group">
@@ -38,6 +41,7 @@
                     <option value="pediatrics">Pediatrics</option>
                     <option value="orthopedics">Orthopedics</option>
                 </select>
+                <span class="error-message" id="departmentError"></span>
             </div>
 
             <div class="form-group">
@@ -45,21 +49,25 @@
                 <label><input type="checkbox" name="concern" value="headache"> Headache</label>
                 <label><input type="checkbox" name="concern" value="stomach"> Stomach Pain</label>
                 <label><input type="checkbox" name="concern" value="allergies"> Allergies</label>
+                <span class="error-message" id="concernError"></span>
             </div>
 
             <div class="form-group">
                 <label for="appointmentDate">Appointment Date:</label>
                 <input type="date" id="appointmentDate" name="appointmentDate" required>
+                <span class="error-message" id="appointmentDateError"></span>
             </div>
 
             <div class="form-group">
                 <label for="username">Username (alphanumeric only):</label>
                 <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" placeholder="Enter username" required>
+                <span class="error-message" id="usernameError"></span>
             </div>
 
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <span class="error-message" id="phoneError"></span>
             </div>
 
             <div class="form-group">
