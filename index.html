@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Doctor's Appointment Form</h1>
+        <form id="appointmentForm" action="https://httpbin.org/post" method="post">
+            
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>Choose a department</option>
+                    <option value="general">General Medicine</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Health Concerns:</label>
+                <label><input type="checkbox" name="concern" value="headache"> Headache</label>
+                <label><input type="checkbox" name="concern" value="stomach"> Stomach Pain</label>
+                <label><input type="checkbox" name="concern" value="allergies"> Allergies</label>
+            </div>
+
+            <div class="form-group">
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username (alphanumeric only):</label>
+                <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" placeholder="Enter username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments or Additional Information:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Additional concerns..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
