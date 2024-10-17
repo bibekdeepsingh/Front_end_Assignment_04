@@ -1,5 +1,4 @@
-// Wait for the DOM to load before running the script
-document.addEventListener('DOMContentLoaded', () => {
+
     
     // Form and inputs
     const form = document.getElementById('ServeyForm');
@@ -122,4 +121,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach the validation function to form submit event
     form.addEventListener('submit', validateForm);
 
-});
+
